@@ -1,0 +1,124 @@
+<div class="scene scene--card">
+            <div class="card">
+                <div class="card__face card__face--front">
+                    <div class="card__face--wrap">
+                        <h3 class="card-title">Тема № 1</h3>
+                        <h4 class="subtitle">Название темы</h4>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo deleniti
+                            quam earum perspiciatis odio reprehenderit perferendis accusamus porro mollitia atque, vel
+                            omnis fugit quia dicta nemo ipsam libero molestias? Corporis, nam, quae animi nisi est ut
+                            inventore itaque quia iste, aliquid optio asperiores vel! Magni vitae soluta perferendis eos
+                            illum?</p>
+
+                        <a href="#" class="btn">узнать больше</a>
+                    </div>
+                </div>
+                <!-- /card -->
+
+                <div class="card__face card__face--back">back</div>
+            </div>
+        </div>
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*===== card =====*/
+.scene {
+  width: 300px;
+  height: 400px;
+  margin: 40px 0;
+  perspective: 600px;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  position: relative;
+
+}
+
+.card.is-flipped {
+  transform: rotateY(180deg);
+}
+
+.card__face {
+
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  // line-height: 260px;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  //font-size: 40px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  //filter: drop-shadow(7px 7px 10px 0px rgba(50, 50, 50, 0.75));
+}
+
+.card__face--wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border: 1px solid white;
+}
+
+.card-title {
+  margin: 0;
+}
+
+.subtitle {
+  margin: 0;
+}
+
+.description {
+  font-size: 12px;
+  padding: 12px;
+}
+
+.btn {
+  text-decoration: none;
+  color: white;
+  margin: 0;
+  background-color: #1dc4e7;
+}
+
+
+
+.card__face:hover {
+  transition: 0.5s;
+  box-shadow: 7px 7px 10px 0px rgba(50, 50, 50, 0.75);
+}
+
+.card__face--front {
+  background: red;
+}
+
+.card__face--back {
+  background: blue;
+  transform: rotateY(180deg);
+}
+

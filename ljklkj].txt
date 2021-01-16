@@ -1,0 +1,18 @@
+<div class="first-title">
+      <p class="fi">
+        Доставим с <span class="first-love">Любовью</span> ваш груз в любую точку мира от 40 кг до <span
+          class="infinity">∞</span>
+      </p>
+
+    </div>
+
+    <div class="first-subtitle">В самые сжатые сроки с финансовой гарантией,
+      избавим от головной боли с таможней, сертификацией,
+      страховкой, с ACCOM вы всегда в выйграше</div>
+
+    <div class="count">
+      <button class="button count-btn">Расчитать Стоимость</button>
+      <p class="first-text">Проложим оптимальный маршрут, подберем транспорт,
+        рассчитаем точную стоимость и срок за 10 минут</p>
+    </div>
+    <div class="discount">20-40% скидка на тестовый заказ <span class="questions">?</span> </div>

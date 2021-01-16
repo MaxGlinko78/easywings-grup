@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Вкладки (табы) с бесконечной вложенностью</title>
+    <meta name="description" content="Пример реализации вкладкок(табов) с бесконечной вложенностью с помощью jQuery">
+    <meta name="keywords" content="вкладки, табы, бесконечная вложенность, вкладки jQuery">
+    <meta name="author" content="Dobrovoimaster">
+    <link rel="icon" href="http://dbmast.ru/favicon.ico">
+    <!-- Базовый CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Шрифт от Google -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300&subset=cyrillic,latin' rel='stylesheet'
+        type='text/css'>
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> 
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+</head>
+
+<body>
+    <div class="top-nav">
+        <div class="topnav-wrapper">
+            <div class="topnav-link">
+                <a href="http://dbmast.ru/vkladki-taby-s-beskonechnoj-vlozhennostyu"
+                    title="Вернуться к изучению деталей">« « Изучить Детали</a>
+            </div>
+            <div class="topnav-logo">
+                <a href="http://dbmast.ru/">{ -- dbmast.ru -- }</a>
+            </div>
+        </div>
+    </div>
+    <header>
+        <h1>
+            Вкладки (табы) с бесконечной вложенностью
+        </h1>
+    </header>
+
+
+
+    <div class="container">
+        <div class="tabs">
+            <ul class="tabs-nav">
+                <li class="active">Аудирование</li>
+                <li>Чтение</li>
+                <li>Лексика и грамматика </li>
+                <li>Письмо</li>
+                <li>Говорение</li>
+            </ul>
+            <div class="tabs-box">
+                <div class="active">
+                    <div class="tabs">
+                        <ul class="tabs-nav">
+                            <li class="active">Аудио - 1 </li>
+                            <li>Аудио - 2</li>
+
+                        </ul>
+                        <div class="tabs-box">
+                            <div class="active">
+                                <audio controls>
+                                    <source src="audio/audio - 1.mp3" type="audio/mpeg">
+
+                                </audio>
+
+                                <p>Вы услышите 6 высказываний. Установите соответствие между высказываниями каждого
+                                    говорящего <span>A–F</span> и утверждениями, данными в списке <span>1–7.</span><br>
+                                    Используйте каждое утверждение, обозначенное соответствующей цифрой, только один
+                                    раз. <br>
+                                    В задании есть одно лишнее утверждение.<br>
+                                    Вы услышите запись дважды.<br>
+                                    Занесите свои ответы в таблицу.<br><br>
+
+                                    1 mending a leaking tap<br>
+                                    2 doing the washing<br>
+                                    3 cleaning the windows<br>
+                                    4 washing-up<br>
+                                    5 decorating<br>
+                                    6 ironing<br>
+                                    7 walking a dog<br>
+                                </p>
+                            </div>
+                            <div>
+                                <p>
+                                    <audio controls>
+
+                                        <source src="audio/audio - 2.mp3" type="audio/mpeg">
+                                        Тег audio не поддерживается вашим браузером.
+                                        <a href="audio/music.mp3">Скачайте музыку</a>.
+                                    </audio>
+                                    Вы услышите монолог. Определите, какие из приведённых утверждений А–G соответствуют
+                                    содержанию текста (1 – True), какие не соответствуют (2 – False) и о чём в тексте не
+                                    сказано, то есть на основании текста нельзя дать ни положительного, ни
+                                    отрицательного ответа (3 – Not stated). Занесите номер выбранного Вами варианта
+                                    ответа в таблицу. Вы услышите запись дважды.<br><br>
+
+                                    A Zoe did not expect to be a teacher after leaving school at sixteen.<br>
+                                    B Zoe did not continue her studies at college.<br>
+                                    С Zoe’s mother was a teacher.<br>
+                                    D Zoe misunderstood the taxi driver's remark.<br>
+                                    E Zoe settled down the moment she arrived in Britain.<br>
+                                    F Zoe wants her book to attract readers of different nationalities.<br>
+                                    G Zoe thinks life turns out as we intend it to.<br>
+
+                                </p>
+                            </div>
+                            <div>
+                                <!-- <div class="tabs">
+                                    <ul class="tabs-nav">
+                                        <li class="active">Вкладка_3_2_1</li>
+                                        <li>Вкладка_3_2_2</li>
+                                        <li>Вкладка_3_2_3</li>
+                                    </ul>
+                                    <div class="tabs-box">
+                                        <div class="active">
+                                            <p>
+                                                Идея правового государства категорически иллюстрирует
+                                                континентально-европейский тип политической культуры. Идея правового
+                                                государства, в первом приближении, наблюдаема. Отметим также, что
+                                                бихевиоризм теоретически возможен. Безусловно, технология коммуникации
+                                                представляет собой постиндустриализм. Элемент политического процесса
+                                                предсказуем.
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <p>
+                                                Как было показано выше, роль иллюстрирует латентный эриксоновский
+                                                гипноз, о чем и писал А.Маслоу в своей работе "Мотивация и личность".
+                                                Лидерство просветляет автоматизм. Эскапизм пространственно понимает
+                                                ролевой эгоцентризм. Аутотренинг притягивает стимул, следовательно
+                                                основной закон психофизики: ощущение изменяется пропорционально
+                                                логарифму раздражителя.
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <p>
+                                                Тело восстанавливает гидродинамический удар. Зеркало, в первом
+                                                приближении, бифокально сжимает гамма-квант. Разрыв, как бы это ни
+                                                казалось парадоксальным, квазипериодично отражает наносекундный солитон.
+                                                Вещество, как неоднократно наблюдалось при постоянном воздействии
+                                                ультрафиолетового облучения, одномерно отражает фотон. Квантовое
+                                                состояние возбуждает барионный электрон. Возмущение плотности поглощает
+                                                объект.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="active">
+                        <div class="tabs">
+                            <ul class="tabs-nav">
+                                <li class="active">Текст 1</li>
+                                <li>Текст 2</li>
+                                <li>Текст 3 </li>
+
+                            </ul>
+                            <div class="tabs-box">
+                                <div class="active">
+                                    <p>Прочитайте текст и заполните пропуски A–F частями предложений,
+                                        обозначенными цифрами 1–7. Одна из частей в списке 1–7 лишняя.
+                                        Занесите цифры, обозначающие соответствующие части предложений,
+                                        в таблицу.<br><br>
+
+                                        1 Escape the routine <br>
+                                        2 A growing trend <br>
+                                        3 Back to nature <br>
+                                        4 Old and young<br>
+                                        5 Save the world <br>
+                                        6 Help with the kids <br>
+                                        7 Learn about yourself <br>
+                                        8 Anything and everything<br><br>
+
+                                        Let’s do it!<br>
+                                        In Totnes, they use ‘acorns’, in Manchester ‘bobbins’ and in Cambridge ‘cams’.
+                                        What on earth are these you may ask? These are all currency units used in the
+                                        Local Exchange Trading Systems (LETS), a scheme that avoids the need to pay cash
+                                        for goods and service, working instead on a bartering exchange system.<br><br>
+                                        A-<br>
+                                        If you’ve never heard of LETS (Local Exchange Trading Systems) you might wonder
+                                        what the fuss is all about. With more than 400 schemes in the UK, it’s obvious
+                                        that more and more people are catching on to the idea. And if you are tired of
+                                        seeing your cash disappear in taxes, here’s a way of keeping your cash and
+                                        exchanging your skills instead.<br><br>
+                                        B-<br>
+                                        Sean Kelly, who edits his local LETS newsletter, lives in a village in
+                                        Bedfordshire. He works part-time for the BBC as a vision engineer. He and his
+                                        wife, who works part-time at the Open University, moved to the village from
+                                        London eight years ago. They wanted ‘to spend time doing what we wanted to do,’
+                                        explains Steve, and LETS fits very well into that plan.<br><br>
+                                        C-<br>
+                                        They joined the LETS scheme when it began after attending a public meeting
+                                        advertised in a local newspaper. When, 18 months ago, their first son arrived,
+                                        the LETS scheme became a godsend. Not only have they acquired everything
+                                        necessary for a baby, they have found the idea of baby-sitting helpful too.
+                                        ‘We’ve made more friends locally through LETS than anything else’.<br><br>
+                                        D-<br>
+                                        One of the most popular things on offer as part of the scheme is fresh fruit and
+                                        vegetables – especially if it’s organic. But there all sorts of skills and goods
+                                        that people can offer. One member renovates old computers and another member has
+                                        a selection of ballgowns for hire – not really an everyday service, but she was
+                                        surprised at the demand.<br><br>
+                                        E-<br>
+                                        Occasionally the members set up a gardening or decorating gang, where a group
+                                        gets together and tackles a bigger job in someone’s garden or home. There are a
+                                        lot of gardeners with years of experience. This becomes a social event too and
+                                        you can hear the laughter from one of these gangs a long way off. Even children
+                                        become involved in the scheme – car-washing is a particular favourite.<br><br>
+                                        F-<br>
+                                        Probably around a third of the members come to the scheme through green or
+                                        social beliefs. Some may be members of organizations such as Greenpeace or
+                                        Friends of the Earth. They are attracted to LETS by the fact that many goods get
+                                        recycled. One LETS group was started by a single mother on a council estate who
+                                        saw the benefits for those on lower incomes.<br><br>
+                                        G-<br>
+                                        But the most important thing, if you do decide to join, is to get involved.
+                                        Don’t just sit around waiting for it to happen; you need to be active. Go to
+                                        meetings and social events, get to know people, and soon you could be swapping
+                                        skills you did not know you had!<br>
+
+
+
+
+
+
+
+                                    </p>
+                                </div>
+                                <div>
+                                    <p>Прочитайте текст и заполните пропуски A–F частями предложений,
+                                        обозначенными цифрами 1–7. Одна из частей в списке 1–7 лишняя.
+                                        Занесите цифры, обозначающие соответствующие части предложений,
+                                        в таблицу. <br><br>
+
+                                        According to a recent study of teenagers, (A) just for pocket money. While many
+                                        do household chores because they see it as a way of getting ready for adult
+                                        life, others feel they have a duty to help their parents (B) , especially if
+                                        their parents work.<br>
+                                        More than two-thirds of the young people (C) clean ﬂoors at least once a week
+                                        and more than 80% regularly set the table for meals or do the washing-up. Girls
+                                        are (D) to wash their own clothes.<br>
+                                        There are, however, a few teens who only do the housework (E) . They argue that
+                                        they should not be expected to help out at home because in their view, their
+                                        teenage years are a period (F) rather than interrupted with household
+                                        responsibilities.<br><br>
+
+
+                                        1. because they are made to by their parents<br>
+                                        2. most of them do not do housework<br>
+                                        3. which should be enjoyed<br>
+                                        4. that came there quite late<br>
+                                        5. because it is fair<br>
+                                        6. more likely than boys<br>
+                                        7. who were surveyed<br>
+                                    </p>
+                                </div>
+
+                                <div>
+                                    <p>
+                                        Прочитайте текст и выполните задания 12–18. В каждом задании
+                                        запишите в поле ответа цифру 1, 2, 3 или 4, соответствующую выбранному Вами
+                                        варианту ответа. <br><br>
+
+                                        Moving house<br><br>
+
+                                        A few days later, Lyn's mother told her to spend her evening sorting out and
+                                        packing her belongings. 'I'll see to your clothes,' she said. 'I want you to do
+                                        your books and paints and things. I've put some cardboard boxes in your room.'
+                                        <br>
+                                        'You should've asked me,' said Lyn, following her into the bedroom and seeing
+                                        the assorted boxes. 'I would've got some. There’s lots outside the supermarket
+                                        near school.' <br>
+                                        'These came from the local shop. Oh it's all right, I've shaken out all the
+                                        dirt,' she said as Lyn tipped up the nearest one, checking that it was empty.
+                                        <br>
+                                        line 8 'OK. I'll do it,' said Lyn. 'We're ready to move then, are we?' <br>
+                                        'Yes, the day after tomorrow. You're going to miss the end of school term, but
+                                        you won't mind that, will you?' <br>
+                                        'You mean Friday's my last day at school?' Lyn pushed the boxes aside with her
+                                        foot to clear a path to her bed so that she could sit down. 'You could've told
+                                        me,' she said. 'I have got people to say goodbye to, you know.' I am telling
+                                        you,' said her mother reasonably. 'It doesn't take two days to say goodbye, does
+                                        it? You'll only get upset.' <br>
+                                        'Why are we doing my things first?' Lyn asked. 'I haven't got much. There's all
+                                        the other stuff in the house - shouldn't we start on that first?' <br>
+                                        'Don't worry about that. Mrs Wilson's coming to help me tomorrow.' <br>
+                                        Lyn remembered what Mandy Wilson had said all those days ago. 'My mum's coming
+                                        round to help you pack.' She felt angry with herself for not having said
+                                        something straightaway - it was probably too late now. But worth a try. 'I can
+                                        help you,' she said. 'We can do it together.' <br>
+                                        'You'll be at school - you want to say goodbye.' <br>
+                                        'I'll go in at lunchtime for that. Mum, we can do it together. I don't want that
+                                        Mrs Wilson touching our things.' Mandy Wilson's mother - picking things over -
+                                        telling Mandy what they'd found - Mandy at school announcing importantly, 'My
+                                        mother says they've got cheap plates and half of them are cracked and none of
+                                        their towels match.' The image was intolerable. <br>
+                                        Lyn's mother moved over to sit beside her on the bed. She was wearing her
+                                        harassed expression. She was clearly feeling the pressure too, but managed to
+                                        keep her patience. 'Nothing's ever straightforward with you, is it?' she said.
+                                        'It's been agreed for a long time and it's extremely kind of her to help.
+                                        Everything's got to be wrapped up carefully so it doesn't get broken, then put
+                                        in storage boxes in the right order - I don't doubt you'd do your best, but
+                                        there's not room for anyone else - and she offered first.' <br>
+                                        Lyn said no more and got on with the job she'd agreed to do. Her bedroom looked
+                                        odd when she'd finished, but not as odd as the rest of the house when she got
+                                        home from school next day. It was so sad. There were no curtains at the windows
+                                        and no ornaments on the shelves and in the middle of the room stood four large
+                                        wooden boxes, full of objects wrapped in newspaper. But what really struck Lyn
+                                        most were the rectangles of lighter-coloured paint on the wall where pictures
+                                        had once hung. It was as if they had been atomised by a ray gun. Moving into the
+                                        kitchen, she saw empty cupboards, their doors wide open. Somebody had done a
+                                        thorough job.<br><br>
+
+                                        12. When Lyn is asked to pack her belongings, she <br><br>
+                                        1 objects to putting her clothes in boxes. <br>
+                                        2 is worried whether the boxes are clean. <br>
+                                        3 thinks that boxes are unsuitable for the job. <br>
+                                        4 is annoyed that she forgot to get better boxes. <br><br>
+
+                                        13. When Lyn says 'I'll do it', she is talking about <br><br>
+                                        1 filling something. <br>
+                                        2 checking something. <br>
+                                        3 collecting something. <br>
+                                        4 replacing something. <br><br>
+
+                                        14. How does Lyn react to the news that the family is moving soon? <br><br>
+                                        1 She's sad to learn that she's leaving her old home. <br>
+                                        2 She wonders how her friends will take the news. <br>
+                                        3 She's worried about missing her schoolwork. <br>
+                                        4 She wishes she'd been told earlier. <br>
+
+                                        15. Why does Lyn offer to do more of the packing? <br><br>
+                                        1 She feels her mother needs her support. <br>
+                                        2 She regrets having refused to do it before. <br>
+                                        3 She distrusts the person who is coming to help.<br>
+                                        4 She's concerned that some things will get damaged. <br><br>
+
+                                        16. What reason does Lyn's mother give for not accepting Lyn's offer of help?
+                                        <br><br>
+                                        1 Other people have already said they will do it. <br>
+                                        2 The job will take more than two people. <br>
+                                        3 Lyn would not be capable of doing it. <br>
+                                        4 Lyn would not enjoy doing it. <br>
+
+                                        17. How did her room look, after she’d finished?<br><br>
+                                        1 the same<br>
+                                        2 differently<br>
+                                        3 strangely<br>
+                                        4 like an ordinary room<br><br>
+
+                                        18. What made the greatest impression on Lyn when she came home the next day?
+                                        <br><br>
+                                        1 how sad her bedroom looked <br>
+                                        2 the empty spaces where things had once been <br>
+                                        3 how the things from the house had been packed <br>
+                                        4 the fact that the kitchen had been completely cleared<br>
+
+
+                                    </p>
+                                </div>
+
+                                <div>
+                                    <!-- <div class="tabs">
+                                        <ul class="tabs-nav">
+                                            <li class="active">Вкладка_3_2_1</li>
+                                            <li>Вкладка_3_2_2</li>
+                                            <li>Вкладка_3_2_3</li>
+                                        </ul>
+                                        <div class="tabs-box">
+                                            <div class="active">
+                                                <p>
+                                                    Идея правового государства категорически иллюстрирует
+                                                    континентально-европейский тип политической культуры. Идея правового
+                                                    государства, в первом приближении, наблюдаема. Отметим также, что
+                                                    бихевиоризм теоретически возможен. Безусловно, технология коммуникации
+                                                    представляет собой постиндустриализм. Элемент политического процесса
+                                                    предсказуем.
+                                                </p>
+                                            </div>
+                                            <div>
+                                                <p>
+                                                    Как было показано выше, роль иллюстрирует латентный эриксоновский
+                                                    гипноз, о чем и писал А.Маслоу в своей работе "Мотивация и личность".
+                                                    Лидерство просветляет автоматизм. Эскапизм пространственно понимает
+                                                    ролевой эгоцентризм. Аутотренинг притягивает стимул, следовательно
+                                                    основной закон психофизики: ощущение изменяется пропорционально
+                                                    логарифму раздражителя.
+                                                </p>
+                                            </div>
+                                            <div>
+                                                <p>
+                                                    Тело восстанавливает гидродинамический удар. Зеркало, в первом
+                                                    приближении, бифокально сжимает гамма-квант. Разрыв, как бы это ни
+                                                    казалось парадоксальным, квазипериодично отражает наносекундный солитон.
+                                                    Вещество, как неоднократно наблюдалось при постоянном воздействии
+                                                    ультрафиолетового облучения, одномерно отражает фотон. Квантовое
+                                                    состояние возбуждает барионный электрон. Возмущение плотности поглощает
+                                                    объект.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div> -->
+                                </div>
+                                <div>
+                                    <p>
+                                        Лазер вторично радиоактивен. Квантовое состояние поглощает элементарный атом. В
+                                        самом общем случае суспензия сжимает изотопный разрыв. Атом растягивает квазар.
+                                        Разрыв стохастично переворачивает коллапсирующий объект. Вещество, на первый
+                                        взгляд,
+                                        стабилизирует погранслой.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="tabs">
+                        <ul class="tabs-nav">
+                            <li class="active">Задание 1 </li>
+                            <li>Задание 2</li>
+                            <li>Задание 3 </li>
+                        </ul>
+                        <div class="tabs-box">
+                            <div class="active">
+                                <p>
+                                    Прочитайте приведённые ниже тексты. Преобразуйте, если необходимо,
+                                    слова, напечатанные заглавными буквами в конце строк, обозначенных
+                                    номерами 19–25, так, чтобы они грамматически соответствовали
+                                    содержанию текстов. Заполните пропуски полученными словами. Каждый
+                                    пропуск соответствует отдельному заданию из группы 19–25.
+                                    <br> <br>
+                                    <table>
+                                        <tr>
+                                            <td>I used to do a typical five-day week, but after I came out of my
+                                                maternity leave, I decided that I wanted to spend more time with my (19)
+                                                before they started school.
+                                            </td>
+                                            <td class="word">CHILD</td>
+                                        </tr>
+                                        <tr>
+                                            <td>After (20) with my boss, we decided to cut my working week down to a
+                                                three-day work week.</td>
+                                            <td class="word">NEGOTIATE</td>
+                                        </tr>
+                                        <tr>
+                                            <td>This of course (21) a significant cut in my pay too, as I'm paid on a
+                                                pro-rata basis.</td>
+                                            <td class="word">MEAN</td>
+                                        </tr>
+                                        <tr>
+                                            <td>I (22) since , though, that my workload hasn't </td>
+                                            <td class="word">NOTICE</td>
+                                        </tr>
+                                        <tr>
+                                            <td>decreased in the (23) ! I'm now doing five days' worth of work in three
+                                                days, but getting paid much less for it!</td>
+                                            <td class="word">SLIGHT</td>
+                                        </tr>
+                                        <tr>
+                                            <td>I find myself having to take work home just so that I can meet the
+                                                deadlines. It (24) me out trying to juggle work with looking after my
+                                                children and my family, but I don’t dare to</td>
+                                            <td class="word">WEAR</td>
+                                        </tr>
+                                        <tr>
+                                            <td>bring this up with my boss because I think he (25) as if he's made a
+                                                huge concession letting me come in only three days a week.</td>
+                                            <td class="word">FEEL</td>
+                                        </tr>
+
+                                    </table>
+
+                                </p>
+                            </div>
+                            <div>
+                                <!-- <div class="tabs">
+                                    <ul class="tabs-nav">
+                                        <li class="active">Вкладка_3_2_1</li>
+                                        <li>Вкладка_3_2_2</li>
+                                        <li>Вкладка_3_2_3</li>
+                                    </ul>
+                                    <div class="tabs-box">
+                                        <div class="active">
+                                            <p>
+                                                Идея правового государства категорически иллюстрирует
+                                                континентально-европейский тип политической культуры. Идея правового
+                                                государства, в первом приближении, наблюдаема. Отметим также, что
+                                                бихевиоризм теоретически возможен. Безусловно, технология коммуникации
+                                                представляет собой постиндустриализм. Элемент политического процесса
+                                                предсказуем.
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <p>
+                                                Как было показано выше, роль иллюстрирует латентный эриксоновский
+                                                гипноз, о чем и писал А.Маслоу в своей работе "Мотивация и личность".
+                                                Лидерство просветляет автоматизм. Эскапизм пространственно понимает
+                                                ролевой эгоцентризм. Аутотренинг притягивает стимул, следовательно
+                                                основной закон психофизики: ощущение изменяется пропорционально
+                                                логарифму раздражителя.
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <p>
+                                                Тело восстанавливает гидродинамический удар. Зеркало, в первом
+                                                приближении, бифокально сжимает гамма-квант. Разрыв, как бы это ни
+                                                казалось парадоксальным, квазипериодично отражает наносекундный солитон.
+                                                Вещество, как неоднократно наблюдалось при постоянном воздействии
+                                                ультрафиолетового облучения, одномерно отражает фотон. Квантовое
+                                                состояние возбуждает барионный электрон. Возмущение плотности поглощает
+                                                объект.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div> -->
+                            </div>
+                            <div>
+                                <p>
+                                    Лазер вторично радиоактивен. Квантовое состояние поглощает элементарный атом. В
+                                    самом общем случае суспензия сжимает изотопный разрыв. Атом растягивает квазар.
+                                    Разрыв стохастично переворачивает коллапсирующий объект. Вещество, на первый взгляд,
+                                    стабилизирует погранслой.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="info">
+            сделано с любовью: <a href="http://twitter.com/dobrovoi">@dobrovoi</a>
+        </p>
+        <div style="text-align: center;">
+            <div class="g-page" data-href="//plus.google.com/u/0/101335235670281720375" data-layout="landscape"
+                data-rel="publisher">
+            </div>
+        </div>
+    </div>
+    <!-- /.container -->
+    <!--  JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="js/mylti-tabs.js"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer>
+        {
+            lang: 'ru'
+        }
+    </script>
+</body>
+
+</html>
