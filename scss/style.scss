@@ -1,0 +1,258 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-anchor: none;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  // color: var(--color-dark);
+  // background-color: var(--color-white);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.btn-reset {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+
+.container {
+  margin: 0 auto;
+  max-width: 1440px;
+  width: 100%;
+}
+
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #4368CB;
+  padding: 20px 10px;
+}
+
+.header-logo__wrapp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+.header-social {
+
+
+  .fa {
+    padding: 5px;
+    width: 30px;
+    color: white;
+  }
+}
+
+
+.header-subtitle {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.20em;
+  color: #FFFFFF;
+}
+
+.header-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.20em;
+  text-transform: uppercase;
+  color: #1DC4E7;
+  margin-top: 5%;
+}
+
+
+.menu-items {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  color: white;
+}
+
+.menu-item {
+  margin-right: 40px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.login_btn {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  color: #1DC4E7;
+  padding: 8px 27px;
+  border: 2px solid #1DC4E7;
+  border-radius: 10px;
+}
+
+.logout_btn {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  color: white;
+  padding: 8px 27px;
+  border: 2px solid white;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+
+.main {
+  display: flex;
+  text-align: center;
+}
+
+.sidebar {
+  margin-top: 10px;
+  max-width: 300px;
+  width: 100%;
+  background: #4368CB;
+}
+
+.photo-box {
+  margin-top: 50px;
+  max-width: 200px;
+  width: 100%;
+  max-height: 200px;
+  height: 100%;
+
+}
+
+.portfolio-img {
+  border: 5px solid #FFA500;
+  border-radius: 50%;
+}
+
+.sidebar-menu {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  text-align: left;
+  border-left: 2px solid white;
+  margin-left: 50px;
+  padding-left: 25px;
+
+  .link {
+    position: relative;
+    margin-bottom: 15px;
+    color: white;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.2em;
+    border-bottom: 2px solid white;
+
+
+    .fa {
+      width: 20px;
+      margin-right: 10px;
+
+    }
+  }
+
+  .link:hover {
+    border-bottom: none;
+    border-top: 2px solid white;
+  }
+}
+
+.portfolio-name {
+  font-family: 'Lobster', cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 0.10em;
+  color: #FFFFFF;
+}
+
+.portfolio-text {
+  color: white;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+
+.content {
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 100%;
+  position: relative;
+}
+
+.content:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../img/uk.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.1;
+  z-index: -1;
+}
+
+.content-title {
+  font-family: Lobster;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 62px;
+  letter-spacing: 0.1em;
+  color: #2F3F5C;
+  text-align: center;
+
+}
+
+.content-text {
+  padding: 0;
+  padding: 50px 20px;
+  margin: 0;
+  text-align: left;
+  z-index: 5;
+  opacity: 1;
+}
