@@ -7,7 +7,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   // color: var(--color-dark);
   // background-color: var(--color-white);
 }
@@ -43,6 +43,7 @@ img {
 
 
 .header {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -89,6 +90,35 @@ img {
   text-transform: uppercase;
   color: #1DC4E7;
   margin-top: 5%;
+}
+
+
+.header-language {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  display: flex;
+  align-items: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.20em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+
+
+
+  .language-link+.language-link {
+    margin-left: 10px;
+    cursor: pointer;
+  }
+
+  .language-link:hover {
+    opacity: 0.7;
+  }
+
 }
 
 
@@ -165,6 +195,7 @@ img {
   text-align: left;
   border-left: 2px solid white;
   margin-left: 50px;
+  margin-bottom: 20px;
   padding-left: 25px;
 
   .link {
@@ -222,7 +253,7 @@ img {
   position: relative;
 }
 
-.content:after {
+.content-main:after {
   content: "";
   display: block;
   position: absolute;
@@ -255,4 +286,97 @@ img {
   text-align: left;
   z-index: 5;
   opacity: 1;
+}
+
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: #FFFFFF;
+  margin-top: 10px;
+  width: 100%;
+  height: 80px;
+  background-color: #2F3F5C;
+}
+
+.footer-sicials {
+  display: flex;
+  align-items: center;
+
+  img+img {
+    margin-left: 5%;
+
+  }
+}
+
+
+.footer-button {
+  display: flex;
+  align-items: center;
+
+  .phone-icon {
+    margin-right: 10px;
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 50%;
+  }
+
+}
+
+/*================ About ===============*/
+
+
+.content-about:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../img/usa-2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.2;
+  z-index: -1;
+}
+
+/*================ Course ===============*/
+
+.content-course:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../img/uk.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.1;
+  z-index: -1;
+}
+
+
+/*================ how it work ===============*/
+
+
+.content-howitwork:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../img/usa-2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.2;
+  z-index: -1;
 }
