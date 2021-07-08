@@ -1,0 +1,228 @@
+<div class="scene scene--card">
+            <div class="card">
+                <div class="card__face card__face--front">
+                    <div class="card__face--wrap">
+                        <h3 class="card-title">Тема № 1</h3>
+                        <h4 class="subtitle">Название темы</h4>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo deleniti
+                            quam earum perspiciatis odio reprehenderit perferendis accusamus porro mollitia atque, vel
+                            omnis fugit quia dicta nemo ipsam libero molestias? Corporis, nam, quae animi nisi est ut
+                            inventore itaque quia iste, aliquid optio asperiores vel! Magni vitae soluta perferendis eos
+                            illum?</p>
+
+                        <a href="#" class="btn">узнать больше</a>
+                    </div>
+                </div>
+                <!-- /card -->
+
+                <div class="card__face card__face--back">back</div>
+            </div>
+        </div>
+        
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
+    <script src="js/main.js" defer></script>
+
+
+    
+</head>
+
+<body>
+
+    <header class=" header">
+
+        <div class="header-wrapper">
+            <img class="header-logo" src="img/logo-pic.png" alt="">
+
+            <div class="header-text">
+                <div class="header-subtitle">EasyEnglish.<span>Prosto</span></div>
+                <div class="header-title">EasyWings <span>Group</span></div>
+            </div>
+            <i class="fas fa-bars"></i>
+
+
+        </div>
+        <div class="header-btns">
+            <a href="#" class="login_btn">LogIn</a>
+            <a href="#" class="logout_btn">LogOut</a>
+        </div>
+    </header>
+
+    <sidebar class="sidebar ">
+        <center>
+            <img class="portfolio-img" src="img/main_portfolio-img.jpg" alt="">
+            <h4 class="portfolio-name">Милёнова Елена</h4>
+        </center>
+
+        <nav class="links">
+            <a href="index.html" class="link"> <i class="fas fa-home"></i>Главная</a>
+            <a href="onlane-aduction.html" class="link"> <i class="fas fa-graduation-cap"></i>Онлайн Обучение</a>
+            <a href="#" class="link"> <i class="fas fa-address-book"></i>Контакты</a>
+            <a href="about.html" class="link"> <i class="fas fa-address-card"></i>Обо мне</a>
+        </nav>
+
+    </sidebar>
+    <main class="main ">
+        <div class="container">
+            <div class="main-wrapper">
+                <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae perferendis omnis ullam
+                    eligendi alias nobis provident officiis sed adipisci aspernatur! Blanditiis id consequuntur dolorem
+                    exercitationem impedit maxime cum animi voluptatum, quia dolores. Eius perspiciatis placeat,
+                    voluptas
+                    mollitia labore voluptatem debitis quidem iste iusto quasi harum fuga saepe facilis aut architecto
+                    doloribus
+                    qui, enim laborum incidunt consectetur modi eveniet magnam earum beatae! Vitae molestias sequi quod
+                    amet
+                    eaque ea excepturi commodi fugit quam ipsam incidunt ex rerum quibusdam animi qui quo nisi dolores,
+                    quaerat
+                    porro maiores at. Fugiat aliquam, placeat quibusdam aspernatur numquam sequi. Architecto nobis nulla
+                    explicabo cum earum sequi.</p>
+                <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae perferendis omnis ullam
+                    eligendi alias nobis provident officiis sed adipisci aspernatur! Blanditiis id consequuntur dolorem
+                    exercitationem impedit maxime cum animi voluptatum, quia dolores. Eius perspiciatis placeat,
+                    voluptas
+                    mollitia labore voluptatem debitis quidem iste iusto quasi harum fuga saepe facilis aut architecto
+                    doloribus
+                    qui, enim laborum incidunt consectetur modi eveniet magnam earum beatae! Vitae molestias sequi quod
+                    amet
+                    eaque ea excepturi commodi fugit quam ipsam incidunt ex rerum quibusdam animi qui quo nisi dolores,
+                    quaerat
+                    porro maiores at. Fugiat aliquam, placeat quibusdam aspernatur numquam sequi. Architecto nobis nulla
+                    explicabo cum earum sequi.</p>
+                <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae perferendis omnis ullam
+                    eligendi alias nobis provident officiis sed adipisci aspernatur! Blanditiis id consequuntur dolorem
+                    exercitationem impedit maxime cum animi voluptatum, quia dolores. Eius perspiciatis placeat,
+                    voluptas
+                    mollitia labore voluptatem debitis quidem iste iusto quasi harum fuga saepe facilis aut architecto
+                    doloribus
+                    qui, enim laborum incidunt consectetur modi eveniet magnam earum beatae! Vitae molestias sequi quod
+                    amet
+                    eaque ea excepturi commodi fugit quam ipsam incidunt ex rerum quibusdam animi qui quo nisi dolores,
+                    quaerat
+                    porro maiores at. Fugiat aliquam, placeat quibusdam aspernatur numquam sequi. Architecto nobis nulla
+                    explicabo cum earum sequi.</p>
+
+                <aside>
+                    asd;ljkhas;dhf
+                </aside>
+            </div>
+
+
+
+        </div>
+
+
+    </main>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*===== card =====*/
+.scene {
+  width: 300px;
+  height: 400px;
+  margin: 40px 0;
+  perspective: 600px;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  position: relative;
+
+}
+
+.card.is-flipped {
+  transform: rotateY(180deg);
+}
+
+.card__face {
+
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  // line-height: 260px;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  //font-size: 40px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  //filter: drop-shadow(7px 7px 10px 0px rgba(50, 50, 50, 0.75));
+}
+
+.card__face--wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border: 1px solid white;
+}
+
+.card-title {
+  margin: 0;
+}
+
+.subtitle {
+  margin: 0;
+}
+
+.description {
+  font-size: 12px;
+  padding: 12px;
+}
+
+.btn {
+  text-decoration: none;
+  color: white;
+  margin: 0;
+  background-color: #1dc4e7;
+}
+
+
+
+.card__face:hover {
+  transition: 0.5s;
+  box-shadow: 7px 7px 10px 0px rgba(50, 50, 50, 0.75);
+}
+
+.card__face--front {
+  background: red;
+}
+
+.card__face--back {
+  background: blue;
+  transform: rotateY(180deg);
+}
+
